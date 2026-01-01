@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+shift_patient_care_nginx
+package-lock.json
+nohup.out
