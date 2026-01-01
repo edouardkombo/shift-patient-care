@@ -99,8 +99,11 @@ How it behaves:
 
 If you do not enable the AI layer, the app still works using the heuristic motion probes, but people counts will be approximate or unavailable.
 
-Install AI packages (only if your code branch uses them):
+Install instructions (AI packages included):
 
 ```bash
-npm i @tensorflow/tfjs @tensorflow/tfjs-backend-webgl @tensorflow-models/coco-ssd
+npm install
+npm run dev
+
+Then visit http://localhost:43173
 
