@@ -152,8 +152,9 @@ export function attachVideoProbe(
     if (pixelDisabled) return;
     if (!ctx) return;
 
-    // Avoid stacking black on top of buffering/frozen/error
-    if (health.state !== "ok") return;
+    // Avoid stacking black on top of buffering/frozen/error.
+    // But allow the probe to run while already "black" so it can detect recovery.
+    if (health.state !== "ok" && health.state !== "black") return;
 
     const w = 96;
     const h = 54;

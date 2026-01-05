@@ -4,3 +4,7 @@ dist
 shift_patient_care_nginx
 package-lock.json
 nohup.out
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+tsconfig.tsbuildinfo
